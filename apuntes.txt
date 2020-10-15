@@ -1,0 +1,23 @@
+PARA eidtar COSAS
+mutation{
+  editProduct(id:5, name: "sprite rica", price: "18", productGroupId: 2){
+    id
+    name
+  	price
+    productGroup{
+      name
+    }
+  }
+}
+
+añadir COSAS
+mutation{
+  addProduct(name: "carne asada", price: "21"){
+   	id
+   	name
+	price
+    productGroup{
+      name
+    }
+  }
+}
