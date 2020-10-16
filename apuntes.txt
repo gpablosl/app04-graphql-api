@@ -11,13 +11,26 @@ mutation{
 }
 
 añadir COSAS
-mutation{
-  addProduct(name: "carne asada", price: "21"){
-   	id
-   	name
-	price
-    productGroup{
-      name
-    }
+	mutation{
+  addProduct(name: "carne asada", price: 21, productGroupId:"5f8494bdd701254cc81df621" ){
+	id
+    name
+    price
+  }
+}
+
+
+
+CHECAR COSAS
+{
+  productGroups{
+    name
+    id
+products {
+  name
+  price
+  id
+}
+    
   }
 }
